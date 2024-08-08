@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PicShare Gallery</title>
+  <link rel="stylesheet" href="/css/list-style.css">
+</head>
+<body>
+  <h1>PicShare Gallery</h1>
+ <button> <a href="/upload">Upload Photo</a> </button> <br/>
+  <div class="gallery">
+    <% photos.forEach(photo => { %>
+      <div class="photo">
+        <img src="/images/<%= photo.filename %>" alt="<%= photo.title %>" width="350px" height="350px" >
+        <h2><%= photo.title %></h2>
+        <p><%= photo.description %></p>
+        
+      </div>
+    <% }) %>
+  </div>
+</body>
+</html>

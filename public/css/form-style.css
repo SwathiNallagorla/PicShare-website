@@ -1,0 +1,87 @@
+/* Ensure the HTML and body cover the full viewport height */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Flex container to center the form */
+body {
+    display: flex;
+    flex-direction: column; /* Arrange elements in a column */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    background-color: #afb0b1; /* Light background color for contrast */
+}
+
+/* Center the heading */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+/* Form styling */
+form {
+    background-color: #fff; /* White background for the form */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional shadow for a subtle 3D effect */
+    width: 85%;
+    /* height: 90%; */
+    
+    max-width: 600px; /* Maximum width for larger screens */
+}
+
+/* Form labels */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Form input fields */
+input[type="text"],
+input[type="number"],
+input[type="email"] {
+    width: calc(100% - 22px); /* Adjust width to account for padding and border */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* File input */
+input[type="file"] {
+    margin-bottom: 15px;
+}
+
+/* Button */
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3e9ec4;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Button hover */
+button[type="submit"]:hover {
+    background-color: #2e7a9b;
+}
+
+/* Error Messages */
+.error {
+    background-color: #ea919b;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
